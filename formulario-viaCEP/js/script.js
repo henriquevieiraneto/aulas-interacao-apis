@@ -19,9 +19,13 @@ cepInput.addEventListener("#blur", ()=>{
 
             document.querySelector("#estado").value = data.uf
         }
+       
         else{
             console.log("CEP não encontrado")
         }
+    })
+    .catch(error =>{
+        alert("Erro ao buscar o CEP")
     })
     }
     else{
